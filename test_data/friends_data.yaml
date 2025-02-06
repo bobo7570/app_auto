@@ -1,0 +1,12 @@
+add_friend_cases:
+  - name: "添加游戏好友"
+    search_key: "游戏好友123"
+    expected: true
+    
+  - name: "添加战队成员"
+    search_key: "战队成员456"
+    expected: true
+
+permission_cases:
+  - user_type: "basic"
+    expected_permissions: ["friend"] 

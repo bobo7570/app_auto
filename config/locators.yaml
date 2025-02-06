@@ -1,0 +1,17 @@
+# 通用元素定位配置
+common:
+  back_button:  # 返回按钮
+    ios: "name == '返回'"
+    android: "resourceIdMatches('.*:id/back_btn')"
+    
+# 登录页面元素
+login_page:
+  username_input:
+    ios: "name CONTAINS '账号'"
+    android: "resourceId('com.tencent.wmcamp:id/username_et')"
+  password_input:
+    ios: "name == '密码输入框'"
+    android: "textContains('密码')"
+  login_button:
+    ios: "name == '登录' AND type == 'XCUIElementTypeButton'"
+    android: "resourceId('com.tencent.wmcamp:id/login_btn')" 

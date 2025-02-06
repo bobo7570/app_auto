@@ -1,0 +1,23 @@
+# 设备配置参数
+devices:
+  ios:  # iOS设备配置
+    platformName: "iOS"  # 平台名称
+    platformVersion: "15.4"  # 系统版本
+    deviceName: "iPhone 13"  # 设备型号
+    bundleId: "com.tencent.wmcamp"  # 应用包ID
+    wdaLocalPort: 8100  # WebDriverAgent端口
+    autoAcceptAlerts: true  # 自动处理系统弹窗
+    
+  android:  # Android设备配置
+    platformName: "Android"  # 平台名称
+    platformVersion: "12"  # 系统版本
+    deviceName: "Xiaomi_12"  # 设备型号
+    appPackage: "com.tencent.wmcamp"  # 应用包名
+    appActivity: ".MainActivity"  # 启动Activity
+    noReset: true  # 不重置应用状态
+
+# Appium服务配置
+appium_server: 
+  host: 127.0.0.1  # 服务地址
+  port: 4723  # 服务端口
+  timeout: 30000  # 超时时间(毫秒) 
